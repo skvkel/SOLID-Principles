@@ -84,7 +84,7 @@ GuardarEmpleado.guardar(empleado)
 
 ```
 
-# Open/Close (Abierto/Cerrado) OCP
+## Open/Close (Abierto/Cerrado) OCP
 Este principio nos dice que una clase está abierta para extender pero cerrada
 para modificar. En otras palabras: una clase implementada no se puede modificar,
 pero si se debe poder extender (**heredar**).
@@ -164,7 +164,7 @@ print(resultado)  # Output: 8
 Para cumplir este principio, hemos utilizado el otro principio SOLID "inversión
 de dependencias", con el que ahora la clase Calculadora no depende directamente
 de una concreción, sino que depende de una abstracción.
-# Sustitución de Liskov LSP
+## Sustitución de Liskov LSP
 Este principio nos dice que si B es un subtipo de A, entonces los objetos de 
 tipo A pueden ser sustituidos por objetos de tipo B sin perjuicios. Lo que es
 lo mismo, una clase derivada puede sustituir a la clase base.
@@ -219,12 +219,12 @@ Pinguino.andar()  # No intenta volar, sólo nada. No tiene método volar
 
 ````
 
-# Inversión de dependencias
+## Inversión de dependencias
 Este principio nos dice que no debemos de depender de concreciones o implementaciones
 sino de abstracciones. El ejemplo del principio anterior ilustra muy bien este
 principio, ya que la clase Calculadora tiene una inyección de una clase
 abstracta, cuyas implementaciones deben implementar el método "ejecutar".
-# Segregación de interfaces
+## Segregación de interfaces
 Este principio se refiere a que las clases deben de tener justo lo necesario y 
 no más. El incluir numerosos métodos en una clase que puede servir para muchas
 cosas, es un error. Deberíamos segregar las interfaces en más de una interfaz.
